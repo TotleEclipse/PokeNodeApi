@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<p>{{subtitle}}</p>
+<ol class="pokedex">
+    <!--Ouverture d'une boucle forEach-->
+    {{#each pokemons.results}}
+    <li>
+        <a href="/{{this.name}}">{{capitalize this.name}}</a>
+    </li>
+    {{/each}}
+    <!--Fermeture de la boucle-->
+</ol>

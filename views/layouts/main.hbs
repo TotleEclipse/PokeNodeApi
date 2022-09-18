@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet" />
+    <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>PokeNode</title>
+</head>
+
+<body>
+    <div class="page">
+        <!--Importation d'un partial : 2 paires d'accolades avec à l'intérieur un unique chevron orienté vers la droite avant le nom du partial-->
+        {{>header}}
+        <section class="content">
+            <!--Importation du body : 3 paires d'accolades-->
+            {{{body}}}
+        </section>
+        <!--Importation de variables : 2 paires d'accolades {{body}}-->
+        {{>footer}}
+    </div>
+</body>
+
+</html>
